@@ -1,0 +1,38 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+		
+}
+body{
+	background:#000;
+	justify-content:center;
+	align-items:center;
+	display:flex;
+    min-height:100vh;
+	
+}
+.clock {
+	font-size:200px;
+	color:#03fc7b;
+	text-shadow: 5px 2px 5px #0cd2f5,  
+	             -5px 2px 5px #fa07fa,
+				  5px 3px 10px #0cd2f5,  
+	             -5px 3px 10px #fa07fa;
+	animation: anim1 1s infinite;	
+}
+@keyframes anim1{
+	0%{text-shadow: 5px 2px 5px #0cd2f5,  
+	             -5px 2px 5px #fa07fa,
+				  5px 3px 10px #0cd2f5,  
+	             -5px 3px 10px #fa07fa;}
+	50%{text-shadow: 5px 2px 5px #fa07fa,  
+	             -5px 2px 5px #0cd2f5,
+				  5px 3px 10px #fa07fa,  
+	             -5px 3px 10px #0cd2f5;}
+	100%{text-shadow: 5px 2px 5px #0cd2f5,  
+	             -5px 2px 5px #fa07fa,
+				  5px 3px 10px #0cd2f5,  
+	             -5px 3px 10px #fa07fa;}
+	
+}
